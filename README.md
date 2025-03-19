@@ -41,24 +41,12 @@ git clone https://github.com/wowDongHyeon/kafka-broker.git
 docker-compose down
 ```
 
-### 추가 설정
 
-- `docker-compose.yml` 파일에는 Spring Boot 애플리케이션에 대한 주석 처리된 섹션이 포함되어 있습니다. 이 섹션을 포함하려면 주석을 해제하고 구성할 수 있습니다.
-
-### 환경 변수
-
-- **Zookeeper**: `ALLOW_ANONYMOUS_LOGIN=yes`
-- **Kafka**:
-  - `KAFKA_BROKER_ID=1`
-  - `KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181`
-  - `ALLOW_PLAINTEXT_LISTENER=yes`
-  - `KAFKA_CFG_LISTENERS=PLAINTEXT://0.0.0.0:9092`
-  - `KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092`
 
 ## 참고 사항
 
 - 포트 `2181`과 `9092`가 다른 애플리케이션에 의해 사용 중이지 않은지 확인하세요.
-- Spring Boot 애플리케이션 섹션은 현재 주석 처리되어 있습니다. 필요에 따라 주석을 해제하고 구성하세요.
+
 
 ## 라이선스
 
