@@ -12,8 +12,8 @@
 ### 저장소 클론
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/wowDongHyeon/kafka-broker.git
+
 ```
 
 ### 서비스 실행
